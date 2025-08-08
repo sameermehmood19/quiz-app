@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="startscreen" >
+        <h2>Welcome to the Quiz!</h2>
+        <button id="startBtn" onclick="dly()" type="button">Start Quiz</button>
+    </div>
+    <div class="showResult">
+        <h2>Final Score is: </h2>
+        <button id="score">10</button>
+        <button id="restart">Restart</button>
+    </div>
+    <div id="card">
+        <div class="header">
+            <h1>Quiz</h1>
+            <!-- timer for 30 sec to 0 -->
+            <div class="timer">
+                <p>Time: </p>
+                <p id="timeRemaining"> 14</p>
+            </div>
+        </div>
+        <div class="main">
+            
+            <h1 id="question">choose correct answer</h1> <!--qustion-->
+
+            <!--options. click on any option then show by change background color to red for wrong (if choose wrong) and green for right -->
+            <div class="options">
+                <button class="option">True</button>
+                <button class="option">False</button>
+                <button class="option">Something Else</button>
+                <button class="option">everyone</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="QNo">
+                <button id="currentQuestionNo">01</button>
+                <p>of</p>
+                <button id="totalQuestionNo">10</button>
+                <p>Question</p>
+            </div>
+            <div class="next">
+                <button id="submit">Next</button> <!--submit answer and move to next question-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
