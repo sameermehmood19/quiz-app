@@ -205,11 +205,13 @@ body {
     border-radius: 6px;
 }
 @media (max-width: 768px) {
-  .card, .startscreen, .showResult {
+  #card, #startscreen, .showResult {
     width: 90vw;
     height: 90vh;
+    border: 8px solid red;
   }
 }
+
 #submit:disabled {
   opacity: 0.5;
   cursor: not-allowed;
